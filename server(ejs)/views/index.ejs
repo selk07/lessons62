@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= 'Lessons 62' %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+    <h1><%='Lessons 62 - EJS'%></h1>
+    <h4><%='Theme:'%> <span><%=theme%></span></h4>
+    <div class="wraper">
+      <div>
+        <h2><%='Login form'%></h2>
+        <form action="/login" class="contact-form" method="post">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit" class="btn"><%='Login'%></button>
+        </form>
+      </div>
+      <div>
+        <h2><%='Registration form'%></h2>
+        <form action="/register" class="contact-form" method="post">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit" class="btn"><%='Registration'%></button>        </form>
+      </div>
+    </div>               
+  </body>
+</html>

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Lessons 62
+    link(rel="icon", href="/favicon.ico")
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    h1 Lessons 62 - PUG
+    h4 Theme: #{theme}
+
+    div(class="wraper")
+      div 
+        h2 Login form
+        form(class="contact-form", action="/login", method="post")
+          input(type="text", name="username", placeholder="Username" required)
+          input(type="password", name="password", placeholder="Password" required)
+          button(type="submit", class="btn") Login
+      div 
+        h2 Registration form
+        form(class="contact-form", action="/register", method="post")
+          input(type="text", name="username", placeholder="Username" required)
+          input(type="password", name="password", placeholder="Password" required)
+          button(type="submit", class="btn") Registration
+    
+
