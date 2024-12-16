@@ -8,6 +8,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded())
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')))
